@@ -12,6 +12,6 @@ class Product < ApplicationRecord
 	validates :name,
 						presence: true
 
-	validates :prices,
+	validates :price,
 						presence: true
 end
