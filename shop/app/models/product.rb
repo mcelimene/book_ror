@@ -21,5 +21,6 @@ class Product < ApplicationRecord
 						numericality: true
 
 	validates :in_stock,
-						inclusion: { in: [true, false]}
+						inclusion: { in: [true, false]},
+						exclusion: { in: [nil]}
 end
