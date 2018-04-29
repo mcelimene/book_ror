@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Book.create(title: "Homo sapiens").authors.create(first_name: 'Max', last_name: 'Frisch')
+Book.create(title: "Homo faber").authors.create(first_name: 'Max', last_name: 'Frisch')
 Book.create(title: "Der Besuch der alten Dame").authors.create(first_name: 'Friedrich', last_name: 'Dürrematt')
 Book.create(title: "Julius Shulman: The last Decade").authors.create([
 	{first_name: 'Thomas', last_name: 'Schirmbock'},
