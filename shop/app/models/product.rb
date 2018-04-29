@@ -19,4 +19,7 @@ class Product < ApplicationRecord
 
 	validates :weight,
 						numericality: true
+
+	validates :in_stock,
+						inclusion: { in: [true, false]}
 end
