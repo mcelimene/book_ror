@@ -10,7 +10,8 @@ class Product < ApplicationRecord
 
 	# Validation
 	validates :name,
-						presence: true
+						presence: true,
+						length: { in: 2..20 }
 
 	validates :price,
 						presence: true
