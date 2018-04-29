@@ -15,4 +15,7 @@ class Product < ApplicationRecord
 
 	validates :price,
 						presence: true
+
+	validates :weight,
+						numericality: true
 end
