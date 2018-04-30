@@ -5,7 +5,7 @@ class Reservation < ApplicationRecord
 	validates :end_date,
 						presence: true
 
-	validates :reservation_dates_must_make_sense
+	validate :reservation_dates_must_make_sense
 
 	private
 	def reservation_dates_must_make_sense

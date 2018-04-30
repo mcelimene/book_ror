@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_29_212632) do
+ActiveRecord::Schema.define(version: 2018_04_30_213626) do
+
+  create_table "indices", force: :cascade do |t|
+  end
 
   create_table "line_items", force: :cascade do |t|
     t.integer "order_id"
@@ -36,6 +39,14 @@ ActiveRecord::Schema.define(version: 2018_04_29_212632) do
     t.integer "weight"
     t.boolean "in_stock"
     t.date "expiration_date"
+    t.integer "height"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "login"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
